@@ -1,7 +1,20 @@
+.center-iframe, iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 body {
     background-color: #f8f9fa;
 }
 
 h1 {
     color: #0d6efd;
+}
+
+.center-all, .container, .navbar, .navbar-brand, .lead, img, button, iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
