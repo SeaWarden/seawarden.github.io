@@ -11,10 +11,61 @@ h1 {
     color: #0d6efd;
 }
 
-.center-all, .container, .navbar, .navbar-brand, .lead, img, button, iframe {
+.btn {
+    margin-top: 1rem;
+}
+
+.navbar, .navbar-brand {
+    background-color: #0d6efd;
+    color: white;
+    padding: 0;
+    margin-top: 0;
+    width: 700px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+    top: 5px;
+    z-index: 1000;
+}
+
+.center-all, .container, img, button, iframe {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.resume-doc iframe {
+    width: 700px;
+    height: 800px;
+    max-width: 100%;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .resume-doc iframe {
+        display: none;
+    }
+}
+
+.resume-section {
+    
+}
+
+.about-box {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
 }
